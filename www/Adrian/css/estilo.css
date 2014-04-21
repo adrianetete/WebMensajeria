@@ -1,0 +1,540 @@
+
+/******************************************************************************************
+*
+*                             Estilos principales:
+*							 - Display
+*							 - Tamano
+*							 - Tipografias
+*							 - Margenes
+*			  			  
+*******************************************************************************************/
+
+/***********************************************
+              Estilos generales
+************************************************/
+
+html{   
+    
+    overflow-y:                 scroll;
+}
+body{
+        
+    margin:                     20px auto;   
+    width:                      95%;
+    min-width:                  768px;
+    font-family:                "Helvetica Neue", Arial, sans-serif;
+    background-image:           url('../images/fondo.png');
+}
+body > header {
+    
+    overflow:                   hidden;
+    text-align:                 center;
+    height:                     80px;
+    border-radius:              10px 10px 0 0;
+}
+body > section {
+    
+    padding:                    15px;
+    min-height:                 550px;
+    position:                   relative;
+    background:                 url('../images/fondoInicio.png') repeat-y top center;
+}
+body > footer{
+    
+    background-color:           #3b3a37;
+    color:                      #c3c2c2;
+    font-size:                  12px;
+    padding:                    15px 10px;
+    font-weight:                bold;
+    position:                   relative;
+    height:                     15px;
+    z-index: 400;
+}
+body > footer ul li{
+    
+    display:                    inline;
+}
+body > footer ul:nth-child(1){
+      
+    position:                   absolute;
+    top:                        15px;
+    left:                       15px;
+}
+body > footer ul:nth-child(2){
+    
+    position:                   absolute;
+    top:                        15px;
+    right:                      5px;
+}
+body > footer ul li a{
+    
+    color:                      #c3c2c2;
+    font-size:                  12px;
+    padding:                    10px 10px;
+    font-weight:                bold;
+    margin-left:                20px;
+    text-decoration:            underline;
+}
+a, button, input[type=submit]{
+    
+    cursor:                     pointer;
+}
+/***********************************************
+              Men� navegaci�n
+************************************************/
+#navegacionPrincipal >ul{
+    
+    margin:                     0;
+    padding:                    0;
+    height:                     60px;
+}
+#navegacionPrincipal > ul > li{
+    
+    float:                      left;
+    list-style-type:            none;
+    text-align:                 center;
+}
+#navegacionPrincipal > ul > li:last-child{
+    
+    float:                      right;
+    list-style-type:            none;
+    text-align:                 center;
+	position:                   relative;
+	font-size:                  17px;
+    margin:                     0;
+}
+#navegacionPrincipal > ul > li:last-child img{
+    margin-right:               5px;
+}
+#navegacionPrincipal > ul > li > a{
+    
+    line-height:                60px;
+    display:                    block;
+    padding:                    0 25px;
+    color:                      #093a70;
+    font-weight:                bold;
+    text-shadow:                -1px 1px #507793;
+}
+.navegacionSecundario{
+
+    display:                    none;
+    margin:                     0;
+    padding:                    0;
+    width:                      205px;
+    right:                      0;
+    top:                        58px;
+    position:                   absolute;
+    z-index:                    100;
+}
+.navegacionSecundario li:nth-child(1) a{
+    
+    padding: 8px 43px;
+}
+.navegacionSecundario li:nth-child(2) a{
+    padding: 8px 58px;
+}
+.navegacionSecundario li:nth-child(3) a{
+    padding: 8px 27px;
+}
+.navegacionSecundario  > li{
+
+    padding:                    6px 0;
+    list-style-type:            none;	
+    font-weight:                bold;
+}
+#btn_cerrarSesion{
+
+    top:                        61px;
+	position:                   absolute;
+}
+#btn_cerrarSesion form{
+    
+    margin:                     0;
+    padding:                    0;
+}
+/***********************************************
+                Iniciar Sesion
+************************************************/
+#formInicioSesion{
+    
+    width:                      401px;
+    height:			200px;
+    position:                   absolute;
+    right:			0;
+    padding:			20px;
+    top:                        130px;    
+    color:                      #9e570f;    
+}
+#formInicioSesion a{
+    
+     color:                      #9e570f;
+}
+ul{
+    
+    list-style-type:            none;
+    margin:                     0;
+    padding:                    0;
+}
+#formInicioSesion li{
+    
+    width:                      199px;
+    float:                      left;
+}
+#formInicioSesion input[type=submit]{
+    
+    padding:                    3px 7px 3px 7px;
+    position:                   absolute;
+    right:                      76px;
+    top:                        80px;
+    background-image: 		linear-gradient(to top, #3084C2 0%, #57ABE8 94%);
+    border: 			medium none;
+    border-radius: 		10px;
+    margin: 			10px 0;
+    padding: 			7px 12px;
+    font-size:                  1em;
+}
+#formInicioSesion input[type=submit]:hover{
+    
+	background-image: 			linear-gradient(to top, #51A5E3 0%, #66BAF7 94%);
+}
+#inicioMas{
+    
+    height:                     50px;
+    position:                   absolute;
+    top:                        85px;
+    width:                      200px;
+}
+
+/***********************************************
+             Administrar Usuarios
+************************************************/
+
+#consola{
+    
+    width:                      50%;
+    margin:                     10px auto;
+    text-align:                 center;
+}
+#tablaUsuarios{
+    
+    text-align:                 center;
+}
+#tablaUsuarios td{
+    
+	height:                     25px;
+	margin:                     0;
+	padding:                    0;
+}
+#tablaUsuarios table{
+    
+    margin:                     0 auto;
+}
+#tablaUsuarios input {
+    
+    border:                     1px solid black;
+    width:                      100px;
+    font-size:                  16px;
+    background-color:           transparent;
+}
+#tablaUsuarios .inputPeq {
+    
+    width:                      30px;
+}
+#tablaUsuarios .inputGran {
+    
+    width:                      180px;
+}
+#tablaUsuarios button{
+    
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-weight: bold;
+    padding: 3px 8px;
+}
+.columna{
+    
+    width:                      100px;
+    text-align:                 center;
+    font-weight:                bold;
+}
+.columnaPeq{
+    
+    width:                      30px;
+    text-align:                 center;
+    font-weight:                bold;
+}
+.columnaGran{
+    
+    width:                      180px;
+    text-align:                 center;
+    font-weight:                bold;
+}
+.columnaOper{
+    
+    width:                      150px;
+    text-align:                 center;
+    font-weight:                bold;
+}
+.centrado{
+    
+    text-align:                 center;
+}
+.nota{
+    
+    color:                      #903300;
+}
+.Enl, .EnlM{
+    
+    text-align:                 center;
+}
+.EnlM span{
+    
+    background-repeat:          no-repeat;    
+}
+.letrita{
+    
+    font-family :               Verdana, Geneva, Arial, Helvetica, sans-serif; 
+    font-size :                 9px; 
+    color:                      #666666;
+}
+.interior{
+    
+    font-family :               Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:                  12px;
+    height:                     350px;
+    overflow-y:                 scroll;
+    width:                      320px;
+    border:                     1px solid black;
+    padding:                    5px;
+    background-color:#ffffff; 
+}
+#conver_responder{ 
+    
+    width:                      333px; 
+    margin-top:                 -2px;
+}
+#texto_responder{
+    
+    width:                      100%;
+    height:                     70px;
+    resize:                     vertical;
+}
+
+/******************************************************
+        Formulario para creacion de nuevos usuarios 
+*******************************************************/
+h2{
+    
+    position:                   relative;
+    z-index:                    51;
+    font-size:                  35px;
+    margin:                     0;	
+    padding-left:               35px;
+    font-weight:                bold;
+    color:                      #9d6802;
+}
+.ContenedorTitulo{
+    
+    z-index:                    50;
+    position:                   relative;
+    padding:                    20px;
+    background-color:           #5b5b5b;
+    border-radius:              10px;
+    box-shadow:                 0 0 4px 8px #5b5b5b;
+}
+#formu_nuevoUsuario{
+    
+    font-weight:            bold;
+    line-height:            2em;
+    width:                  470px;
+    position:               relative;
+    padding:                15px;	
+    box-shadow:             0 10px 18px -1px;
+    float:                  right;
+    top:                    20px;
+    border-radius:          10px;
+}
+#formu_nuevoUsuario div{
+    
+    margin-bottom:          21px;
+}
+#formu_nuevoUsuario label{
+    
+    font-size:              12px;
+}
+#formu_nuevoUsuario input[type=text]{
+    
+    height:                 25px;
+    border:                 1px groove darkgray;
+}
+        #crear_nombre, #crear_apellido1, #crear_apellido2, #crear_pass, #crear_pass2{
+            width:              160px;
+        }
+#formu_nuevoUsuario input[type=submit]{
+    margin-left:            25px;
+    padding:                10px;
+    border:                 1px solid darkgray;
+}
+#formCrearNombre, #formCrearApellidos, #formCrearPass1, #formCrearPass2{
+    width:                  210px;
+    float:                  left;
+    padding-left:           25px;
+}
+#formCrearEmail{
+    width:                  445px;
+    float:                  left;
+    padding-left:           25px;
+}
+        #crear_email{
+            width:              395px;
+        }
+
+#formCrearProvincia{
+    width:                  270px;
+    float:                  left;
+    padding-left:           25px;
+}
+        #crear_provincia{
+            width:              245px;
+        }
+#formCrearCP{
+    width:                  150px;
+    float:                  left;
+    padding-left:           15px;
+}
+    #crear_cp{
+        width:                  110px;
+    }
+label.error {
+    
+    color:                  red;
+    float:                  left;
+    width:                  200px;
+}
+.obligatorio{
+    
+    font-size:              17px;
+    color:                  orange;
+}
+
+/************************************************
+                Perfil
+*************************************************/
+#perfilUsuario{
+    
+    position: relative;
+}
+#perfilUsuario img{
+    
+    position: relative;
+    float: left;
+    top: 20px;
+    background-color: white;
+    left: 15px;
+    border: 1px solid black;
+}
+#perfilUsuario .datos{
+    
+    position: relative;
+    margin-left: 200px;
+    height: 180px;
+}
+.ContenedorDatos{
+            
+    z-index:                    50;
+    padding:                    20px;
+    background-color:           #5b5b5b;
+    border-radius:              10px;
+    box-shadow:                 0 0 4px 8px #5b5b5b;
+}
+#perfilUsuario .ContenedorCuerpo{
+            
+    z-index:                    50;
+    padding:                    20px;
+    background-color:           #5b5b5b;
+    border-radius:              10px;
+    box-shadow:                 0 0 4px 8px #5b5b5b;
+}
+#perfilUsuario .datos h1{
+    
+    margin: 0 0 12px;
+    color: #9d6802;
+    font-size:      36px;
+    text-shadow: -4px -2px #1a1202;
+}
+#perfilUsuario .spanEstado{
+    
+     font-size: 18px;
+}
+#perfilUsuario textarea{
+    
+     height: 100px;
+     width: 400px;
+     resize: none;
+     font-family: Arial;
+     color:#686868;
+     padding: 5px;
+}
+#perfilUsuario .colizquierda{
+    
+    float: left;
+    position: relative;
+    width: 180px;
+}
+#perfilUsuario .cuerpoPrincipal{
+    
+    position: relative;
+    margin-left: 240px;
+}
+#perfilUsuario .colizquierda, #perfilUsuario .cuerpoPrincipal{
+    
+    min-height: 300px;
+    margin-top: 20px;
+}
+/************************************************
+                Cambiar Datos
+*************************************************/
+#misDatos .colizquierda{
+    
+    padding: 30px 1%;
+    position: relative;
+    float:  left;
+    width: 27%;   
+}
+#misDatos .cuerpoCentro{
+    
+    padding: 30px 1%;
+    position: relative;
+    float:  left;
+    width: 68%;
+}
+/****************************************
+            Conversaciones
+*****************************************/
+.mensaje p{
+    margin:         0;
+    width:          300px;
+    word-wrap:       break-word;
+}
+
+
+/********************************
+             Otras cosas
+**********************************/
+
+
+/* Evitar la seleccion del texto */
+#navegacionPrincipal > ul > li{
+
+   -webkit-user-select:     none; 
+   -moz-user-select:        none; 
+   -khtml-user-select:      none;
+}
+
+
+
+
+
+
+
+

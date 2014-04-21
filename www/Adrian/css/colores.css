@@ -1,0 +1,103 @@
+/* 
+    Document   : colores
+    Created on : 25-abr-2013, 9:16:37
+    Author     : Adrian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body > footer {
+    
+   
+}
+a{
+    
+    text-decoration:            none;
+}
+body > header{
+
+    
+}
+/*
+    Menu Principal
+*/
+#navegacionPrincipal >ul{
+
+    background-repeat:          repeat-x;
+    background-image:           url('../images/boton.png');
+}
+#consola{
+
+    color:                      #E13300;
+    border:                     1px solid #E13300;
+}
+
+#fotoPrinci{
+   
+}
+#perfilUsuario article {
+    
+   
+}
+
+/*
+    Menu Secundario
+*/
+.navegacionSecundario{
+
+    background-color:           #b0701d;
+}
+.navegacionSecundario  > li{
+
+    margin:                     5px;
+    border:                     1px solid black;     /*Provisional*/
+    background-color:           wheat;               /*Provisional*/
+}
+.navegacionSecundario  > li:hover{
+    
+	margin:                     6px;
+        border:                     none;
+	background-color:           #C79448;               /*Provisional*/
+}
+.navegacionSecundario > li a{
+    
+        color:                      #1367c8;
+}
+/*
+    Tabla de Administrar Usuarios
+*/
+#tablaUsuarios table, #tablaUsuarios td{
+    
+    border:                     1px dotted lightslategrey;
+    border-collapse:            collapse;
+}
+#tablaUsuarios thead{
+
+    background-color:           #61B7CF;
+}
+#tablaUsuarios tbody tr:nth-child(odd){
+	background-color:           #EAFFFF;
+}
+#tablaUsuarios tbody tr:nth-child(even){
+	background-color:           #CFE4E4;
+}
+#tablaUsuarios tbody tr:last-child{
+	background-color:           white;
+}
+
+/*
+    Formulario de Crear Usuario
+*/
+#formu_nuevoUsuario{
+    
+    background-color:           #2750C0;
+}
+#formu_nuevoUsuario input[type=submit]{    
+    
+    background-color:           #FFAA34;
+}
+#formu_nuevoUsuario input[type=submit]:hover{ 
+    
+    background-color:           #A66711;
+}
+
